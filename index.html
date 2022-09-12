@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrapper">
+      <div class="card">
+        <div class="side" id="first">
+          <div class="frame-feedback shadow">
+            <img class="feedback-image" src="images/icon-star.svg" alt="star" />
+          </div>
+          <h1 class="title">How did we do?</h1>
+          <p class="feedback-text">
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
+          <div class="ratings">
+            <div class="frame-feedback shadow">1</div>
+            <div class="frame-feedback shadow">2</div>
+            <div class="frame-feedback shadow">3</div>
+            <div class="frame-feedback shadow">4</div>
+            <div class="frame-feedback shadow">5</div>
+          </div>
+          <div class="submit shadow" id="btn-submit">
+            <span>SUBMIT</span>
+          </div>
+        </div>
+
+        <div class="side center invisible" id="second">
+          <div class="result-wrapper">
+            <img
+              src="images/illustration-thank-you.svg"
+              alt="receipt"
+              class="thanks-image"
+            />
+            <div class="result">
+              <span id="result-text">You selected # out of 5</span>
+            </div>
+            <h2 class="title">Thank you!</h2>
+            <p class="feedback-text additional-text">
+              <span> We appreciate you taking the time to give a rating. </span>
+              <span style="display: block; width: 90%; margin: auto">
+                If you ever need more support, don’t hesitate to get in touch!
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Pavlek</a>.
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
